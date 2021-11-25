@@ -1,0 +1,242 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Custom */
+
+*,
+*::before,
+*::after
+{
+    box-sizing: border-box;
+}
+
+@font-face
+{
+    src: url(../fonts/BeVietnamPro-Regular.ttf);
+    font-family: kuna;
+}
+
+body
+{
+    font-family: kuna;
+    background-color: #1D2029;
+}
+
+.flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrap
+{
+    flex-wrap: wrap;
+}
+.center
+{
+    justify-content: center;
+    align-items: center;
+}
+
+.container 
+{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.space40
+{
+    padding: 40px 0;
+}
+.space16
+{
+    padding: 16px 0;
+}
+
+/* headings */
+
+h1,
+h2,
+h3{
+    color: #fff;
+}
+
+h1 
+{
+    font-size: 32px;
+    margin-bottom: 7px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4
+{
+    font-size: 14px;
+}
+
+/* header */
+
+.header
+{
+    background-color: #20222f;
+    padding: 40px 0 140px 0;
+}
+header h4{
+    color: #8a8a8a;
+}
+
+.mode span{
+    color: #8a8a8a;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.toggle
+{
+    width: 40px;
+    height: 20px;
+    border-radius: 12px;
+    background: linear-gradient(to left,aqua, springgreen);
+}
+.switch
+{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #20222f;
+    margin-left: 3px;
+}
+
+
+/* sec1
+cards */
+.sec1 {
+    margin-top: -100px;
+}
+.card
+{
+    width: 23%;
+    background-color: #252b43;
+    text-align: center;
+    padding: 24px;
+    position: relative;
+    margin-bottom: 32px;
+}
+.sec1 h2
+{
+    font-size: 54px;
+    font-weight: 700
+}
+.sec1 p
+{
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 3;
+    color: #8a8a8a;
+}
+
+.social span {
+    color: #8a8a8a;
+    font-size: 14px;
+    margin-left: 8px;
+}
+.card .body
+{
+    padding: 24px 0;
+}
+.social img {
+    width: 20px;
+}
+.stats .up {
+    color: #0fb37e;
+    font-size: 12px;
+    font-weight: bold;
+}
+.stats .down {
+    color: #c92a2a;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.top-border {
+    background-color: #3a5897;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.twitter .top-border
+{
+    background-color: #55acee;
+}
+.ig .top-border
+{
+    background: linear-gradient(to right, #FFDC80, #FCAF45, #F77737, #F56040, #E1306C, #C13584, #833AB4);
+}
+.yt .top-border{
+    background: red;
+}
+
+/* sec2 
+Overview */
+
+.sec2 h3 {
+    padding-bottom: 20px;
+}
+.sec2 h2 {
+    font-size: 32px;
+}
+.sec2 p {
+    color: #8a8a8a;
+}
